@@ -13,7 +13,7 @@ header{
 	width: 90%;
 	max-width: 1000px;
 	margin: auto;
-	background-color: rgba(255,255,255,.7);
+	background-color: rgba(255,255,255,.9);
 	margin-top: 0;
 	padding: 20px;
 	border-radius:0px 0px 5px 5px;
@@ -58,9 +58,28 @@ header ul li a.active{
 	width: 90%;
 	max-width: 1000px;
 	margin: auto;
-	background-color: rgba(255,255,255,.7);
+	background-color: rgba(255,255,255,.9);
 	margin-top: 30px;
 	height: 500px;
 	padding: 20px;
 	border-radius: 5px;
+
+}
+
+.article-title{
+	display: inline-block;
+}
+
+.article-date{
+	display: inline-block;
+	float: right;
+}
+
+.article-preview{
+	width: 90%;
+	margin: auto;
+	padding: 20px;
+	background-color: white;
+	box-shadow: 5px 10px 30px #888888;
+
 }
