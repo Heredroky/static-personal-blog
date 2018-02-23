@@ -10,14 +10,22 @@ body{
 }
 
 header{
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+#header-container{
 	color: #161C3D;
-	width: 90%;
 	max-width: 1000px;
 	margin: auto;
 	background-color: rgba(255,255,255,.9);
-	margin-top: 0;
 	padding: 20px;
 	border-radius:0px 0px 5px 5px;
+}
+
+.menu_bar{
+	display: none;
 }
 
 header h1{
@@ -30,13 +38,14 @@ header nav, #social-media-links{
 
 header ul, #social-media-links ul{
 	list-style: none;
+	float: right;
 }
 
 header ul li{
 	padding: 10px 20px;
 	background-color: #C8D0E8;
 	margin-right: 20px;
-	float: right;
+	display: inline-block;
 	border-radius: 5px;
 }
 
@@ -60,7 +69,7 @@ header ul li a.active{
 	max-width: 1000px;
 	margin: auto;
 	background-color: rgba(255,255,255,.9);
-	margin-top: 30px;
+	margin-top: 100px;
 	margin-bottom: 70px;
 	padding: 20px;
 	border-radius: 5px;
@@ -83,6 +92,10 @@ header ul li a.active{
 	background-color: white;
 	box-shadow: 5px 10px 30px #888888;
 	margin-bottom: 20px;
+}
+
+hr{
+	margin: 10px 0;
 }
 
 #footer-wrapper{
@@ -119,4 +132,72 @@ footer{
 
 #social-media-links{
 	margin-right: 10%;
+}
+
+@media screen and (min-width: 768px){
+	#header-container{
+		width: 90%;
+	}
+
+	#footer-wrapper{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	body{
+		padding-top: 80px;
+	}
+
+	.menu_bar{
+		display: block;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		background-color: #161C3D;
+		border-bottom: 1px solid rgba(255,255,255,.5);
+	}
+
+	.menu_bar .button_menu{
+		display: block;
+		padding: 20px;
+		color: white;
+		overflow: hidden;
+		text-decoration: none;
+		font-size: 25px;
+		font-weight: bold;
+	}
+
+	#articles-container{
+		margin-top: 30px;
+	}
+
+	header h1{
+		display: none;
+	}
+
+	#header-container{
+		color: #161C3D;
+		width: 50%;
+		position: fixed;
+		margin-top: 60px;
+		left: 100%;
+		background-color: #C8D0E8;
+		border-radius:0px;
+		height: 100%;
+		z-index: 20;
+		padding: 0;
+	}
+
+	#header-container nav, #header-container nav ul{
+		width: 100%;
+	}
+
+	header ul li{
+		display: block;
+		border-radius: 0px;
+		border-bottom: 1px solid rgba(255,255,255,.5);
+		width: 100%;
+		padding: 30px 20px;
+	}
 }
