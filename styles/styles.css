@@ -82,7 +82,7 @@ header ul li a.active{
 }
 
 #about-me-container{
-	margin-top: 12px;
+	margin-bottom: 30px;
 }
 
 #projects-container{
@@ -214,6 +214,9 @@ footer{
 		padding-top: 80px;
 	}
 
+	#about-me-container{
+		margin-bottom: 12px;
+	}
 	.menu_bar{
 		display: block;
 		width: 100%;
