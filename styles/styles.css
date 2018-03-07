@@ -70,6 +70,7 @@ header ul li a.active{
 }
 
 #articles-container, #about-me-container, #projects-container, #contact-form-container{
+	position: relative;
 	color: #161C3D;
 	width: 90%;
 	max-width: 1000px;
@@ -207,12 +208,30 @@ footer{
 }
 
 #contact-form{
-	width: auto;
+	width: 50%;
 	margin: 10px auto;
 }
 
 #contact-name, #contact-email, #contact-subject{
+	height: 30px;
+}
+
+#contact-name, #contact-email, #contact-subject, #contact-message, #send-button{
 	display: block;
+	width: 100%;
+	padding: 5px;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+#send-button{
+	height: 40px;
+	width: 80%;
+	margin: 10px auto;
+	padding: 8px;
+	background-color: #161C3D;
+	color: white; 
+	border-radius: 3px;
 }
 
 @media screen and (min-width: 768px){
@@ -227,6 +246,7 @@ footer{
 }
 
 @media screen and (max-width: 868px){
+
 	body{
 		padding-top: 80px;
 	}
@@ -284,6 +304,10 @@ footer{
 		border-bottom: 1px solid rgba(255,255,255,.5);
 		width: 100%;
 		padding: 30px 20px;
+	}
+
+	#contact-form{
+		width: 70%;
 	}
 
 
