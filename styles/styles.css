@@ -149,18 +149,6 @@ footer{
 	margin-right: 10%;
 }
 
-
-@media screen and (min-width: 768px){
-	#header-container{
-		width: 90%;
-	}
-
-	#footer-wrapper{
-		width: 90%;
-		padding-top:40px;
-	}
-}
-
 /*Projects Card*/
 
 
@@ -207,7 +195,36 @@ footer{
 	margin-left: 31.5%;
 }
 
+/* Contact Form */
 
+#contact-form-container p, #contact-form-container h4{
+	text-align: center;
+}
+
+#contact-form-container p{
+	font-weight: bold;
+	font-size: 35px;
+}
+
+#contact-form{
+	width: auto;
+	margin: 10px auto;
+}
+
+#contact-name, #contact-email, #contact-subject{
+	display: block;
+}
+
+@media screen and (min-width: 768px){
+	#header-container{
+		width: 90%;
+	}
+
+	#footer-wrapper{
+		width: 90%;
+		padding-top:40px;
+	}
+}
 
 @media screen and (max-width: 868px){
 	body{
