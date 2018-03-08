@@ -69,7 +69,7 @@ header ul li a.active{
 	color: white;
 }
 
-#articles-container, #about-me-container, #projects-container, #contact-form-container{
+#articles-container, #about-me-container, #projects-container, #contact-form-container, #blog-post-container{
 	position: relative;
 	color: #161C3D;
 	width: 90%;
