@@ -234,6 +234,34 @@ footer{
 	border-radius: 3px;
 }
 
+/* Blog Post */
+
+#blog-post-container{
+	border-radius: 0px;
+	background-color: white;
+}
+
+#blog-post-title, #blog-post-subtitle{
+	text-align: center;
+}
+
+#blog-post-title{
+	font-weight: bold;
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+
+#blog-post-date{
+	display: block;
+	float: none;
+	text-align: center;
+}
+
+#social-share{
+	text-align: center;
+	margin-top: 5px;
+}
+
 @media screen and (min-width: 768px){
 	#header-container{
 		width: 90%;
