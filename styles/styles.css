@@ -82,6 +82,13 @@ header ul li a.active{
 	border-radius: 5px;
 }
 
+#articles-container h4{
+	font-weight: bold;
+	font-size: 35px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
 #about-me-container{
 	margin-bottom: 30px;
 }
@@ -289,6 +296,7 @@ footer{
 		top: 0;
 		background-color: #161C3D;
 		border-bottom: 1px solid rgba(255,255,255,.5);
+		z-index: 30;
 	}
 
 	.menu_bar .button_menu{
@@ -337,7 +345,10 @@ footer{
 	#contact-form{
 		width: 70%;
 	}
-
+	
+	#articles-container, #about-me-container, #projects-container, #contact-form-container, #blog-post-container{
+		margin-top: 20px;
+	}
 
 }
 
